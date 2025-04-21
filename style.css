@@ -1,0 +1,210 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.phone-frame {
+    background: linear-gradient(to bottom, #9272ff, #d881f8);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.screen {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    width: 375px;
+    height: 667px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.back-button, .more-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #777;
+    cursor: pointer;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details .name {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.user-details .status {
+    color: #777;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.chat-container {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    background-color: #eee;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px 15px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.message.left {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+}
+
+.message.right {
+    align-self: flex-end;
+    background-color: #e0f7fa; 
+}
+
+.image-gallery {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.image-gallery img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.booking-options {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.option label span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #9272ff;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option input[type="radio"]:checked + label span {
+    background-color: #9272ff;
+    border-color: #9272ff;
+}
+
+.option .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.input-area {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.input-area .send-button {
+    background: linear-gradient(to right, #9272ff, #d881f8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.booking-info {
+    text-align: center;
+    max-width: 600px;
+}
+
+.booking-info h2 {
+    color: #555;
+}
+
+.booking-info p {
+    color: #777;
+    line-height: 1.6;
+}

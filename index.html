@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Booking Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="header">
+                <button class="back-button">&lt;</button>
+                <div class="user-info">
+                    <img src="images/avatar.jpg" alt="Samuel Green">
+                    <div class="user-details">
+                        <p class="name">Samuel Green</p>
+                        <p class="status">Available to Walk</p>
+                    </div>
+                </div>
+                <button class="more-button">...</button>
+            </div>
+
+            <div class="chat-container">
+                <div class="message left">That sounds great. I'd be happy to discuss more.</div>
+                <div class="message left">Could you send over some pictures of your dog, please?</div>
+
+                <div class="image-gallery">
+                    <img src="images/dog-image-2.jpg" alt="Dog 1">
+                    <img src="images/dog-image-1.jpg" alt="Dog 2">
+                    <img src="images/dog-image-3.jpg" alt="Dog 3">
+                </div>
+
+                <div class="message right">Here are a few pictures. She's a happy girl!</div>
+                <div class="message right">Can you make it?</div>
+
+                <div class="message left">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+
+                <div class="booking-options">
+                    <div class="option">
+                        <input type="radio"  name="walk-duration" value="30" checked>
+                        <label for="walk-30"><span></span> 30 minute walk</label>
+                        <span class="price">$29</span>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="walk-60" name="walk-duration" value="60">
+                        <label for="walk-60"><span></span> 1 hour walk</label>
+                        <span class="price">$49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" placeholder="Type a message...">
+                <button class="send-button">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-info">
+        <h2>Simple booking</h2>
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+    </div>
+</body>
+</html>
