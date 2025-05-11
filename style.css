@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'rubik';
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -207,4 +207,77 @@ body {
 .booking-info p {
     color: #777;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .phone-frame {
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .screen {
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .user-info img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .chat-container {
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .message {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .image-gallery img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .booking-options {
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    .option {
+        padding: 8px;
+    }
+
+    .input-area {
+        padding: 10px 15px;
+    }
+
+    .input-area input[type="text"] {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .input-area .send-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .booking-info {
+        padding: 0 15px;
+    }
+
+    .booking-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .booking-info p {
+        font-size: 0.9rem;
+    }
 }
